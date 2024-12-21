@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add cart</title>
+</head>
+<body>
+    <button class="show"> Show Quantity</button>
+    
+    <button class="add"> Add to cart</button>
+    
+    <button class="two"> +2</button>
+    
+    <button class="three"> +3</button>
+    
+    <button class="reset"> Reset Cart</button>
+
+
+<script>
+    let cartQuantity =0;
+    document.querySelector('.show') .addEventListener("click",function(){
+        console.log(`Cart Quantity :${cartQuantity}`);
+    });
+    document.querySelector('.add') .addEventListener("click",function(){
+        cartQuantity++;
+        console.log(`Cart Quantity :${cartQuantity}`);
+    });
+    document.querySelector('.two') .addEventListener("click",function(){
+        cartQuantity +=2;
+        console.log(`Cart Quantity :${cartQuantity}`);
+    });
+    document.querySelector('.three') .addEventListener("click",function(){
+        cartQuantity +=3;
+        console.log(`Cart Quantity :${cartQuantity}`);
+    });
+    document.querySelector('.reset') .addEventListener("click",function(){
+        console.log('Cart was Reset');
+        cartQuantity =0;
+        console.log(`Cart Quantity :${cartQuantity}`);
+    });
+</script>
+</body>
+</html>
