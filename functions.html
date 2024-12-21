@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        function sum() {
+            console.log(2 + 2);
+        }
+        sum();
+
+        // Greet Function
+
+        function greet(name) {
+            console.log("Hello, " + name);
+        }
+        greet("Usman");
+
+        // Helo Function
+
+        function helo() {
+            console.log("Say Hello");
+        }
+        helo();
+
+        // Add Two Number
+
+        function addNum(a, b) {
+            console.log(a + b);
+        }
+        addNum(6, 3);
+        addNum(9, 4);
+
+        // Return Function
+        function multiply(a, b) {
+            return a * b;
+        }
+        let result = multiply(6, 6);
+        console.log(result);
+
+        //  function Expression
+        let gret = function (name) {
+            console.log("Hi, " + name);
+        }
+        gret("Noman");
+
+        // Arrow Function
+        let divid = (a, b) => a / b;
+        console.log(divid(50, 2));
+
+        let Sum = (a, b) => a - b;
+        console.log(Sum(30, 10));
+
+        let greeet = (name) => {
+            console.log("Hello , " + name);
+        }
+        greeet("Usman");
+
+        function outerFunction() {
+            console.log("This is the outer function.");
+
+            function innerFunction() {
+                console.log("This is the inner function.");
+            }
+
+            innerFunction(); // Calling inner function
+        }
+
+        outerFunction();
+
+        let squre= function(a){
+            return a*a;
+        }
+        console.log(squre(7));
+
+
+
+
+    </script>
+
+</body>
+
+</html>
