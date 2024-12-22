@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>submit</button>
+
+    <div style="width: 200px; height: 100px; margin-top: 20px; background-color: lightgray;">Hover over me</div>
+
+    <script>
+        let button=document.querySelector('button').addEventListener("click",function(){
+            this.innerHTML="Clicked";
+            alert("button Clicked");
+        });
+        document.querySelector("div").addEventListener("mouseover", function () {
+        this.style.backgroundColor = "yellow";
+    });
+    </script>
+
+</body>
+</html>
+
+
+
+
+    
