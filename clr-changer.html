@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clr Changer</title>
+</head>
+<body>
+    <button id="clrbtn"> clr changer</button>
+
+    <script>
+         function getclr(){
+        let ltr="0123456789ABCDEF";
+        let clr="#";
+        for(let i=0;i<6;i++){
+            clr+=ltr[Math.floor(Math.random()*16)];
+        }
+        return clr;
+    }
+    button=document.getElementById("clrbtn");
+    button.addEventListener("click",function(){
+        const  randomclr= getclr();
+        document.body.style.backgroundColor=randomclr;
+        button.style.backgroundColor=randomclr;
+    });
+
+        
+    </script>
+</body>
+</html>
