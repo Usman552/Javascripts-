@@ -12,9 +12,9 @@ const genratebtn=document.getElementById('genrte_btn');
 genratebtn.addEventListener("click",function generatePass(){
     let password="";
     password+=UppperCase[Math.floor(Math.random()*UppperCase.length)];
-    password+=UppperCase[Math.floor(Math.random()*LowerCase.length)];
-    password+=UppperCase[Math.floor(Math.random()*number.length)];
-    password+=UppperCase[Math.floor(Math.random()*symbol.length)];
+    password+=LowerCase[Math.floor(Math.random()*LowerCase.length)];
+    password+=number[Math.floor(Math.random()*number.length)];
+    password+=symbol[Math.floor(Math.random()*symbol.length)];
 
     while(lenght  >  password.length){
         password+=allchars[Math.floor(Math.random()*allchars.length)];
