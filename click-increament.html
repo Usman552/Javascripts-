@@ -9,13 +9,18 @@
 
 <body>
     <button id="increament">Increament</button>
+    <button id="decreament">Decreament</button>
     <button id="reset">Reset</button>
     <p id="counter">0</p>
 
     <script>
         let count=0;
         document.getElementById("increament").addEventListener("click",function(){
-            count++
+            count++;
+            document.getElementById("counter").innerHTML=count;
+        })
+        document.getElementById("decreament").addEventListener("click",function(){
+            count--;
             document.getElementById("counter").innerHTML=count;
         })
         document.getElementById("reset").addEventListener("click",function(){
