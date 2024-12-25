@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+}
+.container{
+    position: relative;
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    background-color:thistle;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 6px solid rgb(0, 0, 0,0.5);
+}
+.clock span{
+    position: absolute;
+    transform:rotate(calc(30deg*var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+.clock span b{
+    transform:rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+.clock::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color:black;
+    text-align: center;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    background-color: black;
+}
+.hand i{
+    width: 4px;
+    height:var(--h);
+    position: absolute;
+    background-color: var(--clr);
+    border-radius: 8px;
+}
+.digital-clock{
+    width: 300px;
+    height: 100px;
+    border: 3px solid rgb(100, 10, 16,0.2);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(to right,rgba(35, 124, 213, 0.4),rgba(147, 190, 230, 0.1));
+}
+.time-unit p {
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(90deg,#ef7373,#6200ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.time-unit div{
+    font-size: 25px;
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.box h2{
+    text-align: center;
+    padding-bottom:10px ;
+    background: linear-gradient(rgb(18, 167, 226),rgb(172, 246, 36));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+#analogClock {
+    visibility: visible; /* Analog clock visible by default */
+}
+#digitalClock {
+    visibility: hidden;
+}
+
+#Toggle-btn{
+    display: block;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ef7373;
+    border-radius: 10px;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 510px;
+    transition: all 0.3s ease;
+    margin-right: 100px;
+}
+#Toggle-btn:hover{
+    background: linear-gradient(to right,#6200fc,#fc0f);
+    cursor: pointer;
+}
