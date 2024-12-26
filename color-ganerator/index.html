@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clr Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            height: 60px;
+            line-height: 60px;
+           
+        }
+        li, a {
+            display: inline;
+            padding-left: 10px;
+            text-decoration: none;
+            color: #000;
+            list-style: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        #logo {
+            font-size: 35px;
+            font-weight: 800;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .main h2 {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .color{
+            color: blue;
+        }
+        .main button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color:transparent;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <label for="logo" id="logo">Color-Generator</label>
+        <ul>
+            <li><a href="#">Simple</a></li>
+            <li><a href="#">Hex</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <h2>background-color : <span class="color">#00000</span></h2>
+        <button id="button">Click Me</button>
+    </main>
+    <script src="color.js"></script>
+</body>
+</html>
