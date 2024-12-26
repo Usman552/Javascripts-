@@ -5,13 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Increament</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #counter{
+            font-size: 35px;
+            font-weight: 800;
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        button:hover{
+            background-color: rgb(237, 146, 146);
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="counter">
+        <h1>Counter</h1>
+        <p id="counter">0</p>
     <button id="increament">Increament</button>
-    <button id="decreament">Decreament</button>
     <button id="reset">Reset</button>
-    <p id="counter">0</p>
+    <button id="decreament">Decreament</button>
+    
+    
+</div>
 
     <script>
         let count=0;
