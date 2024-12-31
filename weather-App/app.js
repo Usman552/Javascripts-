@@ -33,3 +33,17 @@ function displayWeather(data) {
     <img src="${weatherIcon}" alt="Weather icon" />
   `;
 }
+
+// async function getdata(cityName) {
+//   const promise=await fetch(http://api.weatherapi.com/v1/current.json?key=5da369c0260b4ef198374745243112&q=${cityName}&aqi=yes);
+//   return await promise.json();
+// }
+
+// getWeatherBtn.addEventListener('click', async () => { 
+//   const value=cityInput.value;
+//   const data=await getdata(value);
+//   cityName.innerText=${data.location.name},${data.location.region}-${data.location.country};
+//   cityTemp.innerText=${data.current.temp_c}°C;
+//   cityCondition.innerText=data.current.condition.text;
+//   weathericon.innerHTML = <img src="${data.current.condition.icon}" alt="Weather Icon" />;
+//   });
