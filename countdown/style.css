@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dff9fb;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #ED4C67;
+    border-radius: 10px;
+}
+.offer{
+    background-color: #a7fde07d;
+    font-size: 45px;
+    width: 110%;
+    text-align: center;
+}
+.counter{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px 12px;
+    text-align: center;
+}
+#days{
+    background-color: rgba(127, 255, 212, 0.527);
+    font-size: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: 800;
+}
+#hour{
+    background-color: rgba(127, 255, 212, 0.527);
+    font-size: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: 800;
+}
+#minuts{
+    background-color: rgba(127, 255, 212, 0.527);
+    font-size: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: 800;
+}
+#seconds{
+    background-color: rgba(127, 255, 212, 0.527);
+    font-size: 45px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-weight: 800;
+}
