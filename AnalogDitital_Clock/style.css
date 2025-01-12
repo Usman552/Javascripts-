@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Clock container styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Digital clock styling */
+#digitalClock {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+/* Analog clock base styling */
+.analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 20px auto;
+    background: #fff;
+    display: none; /* Hidden by default */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.center-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Analog clock hands */
+.hand {
+    position: absolute;
+    background-color: #333;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    transform-origin: 0% 0%;
+    transform: rotate(90deg);
+}
+
+.hour {
+    width: 25%;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.minute {
+    width: 35%;
+    height: 4px;
+    background-color: #666;
+    border-radius: 2px;
+}
+
+.second {
+    width: 40%;
+    height: 2px;
+    background-color: red;
+    border-radius: 1px;
+}
+
+.analog-clock span{
+    position: absolute;
+    transform:rotate(calc(30deg*var(--i)));
+    inset:2px;
+    color: #333;
+    text-align: center;
+}
+.analog-clock span b{
+    transform:rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
