@@ -1,55 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
+    <link href="/your-path-to-uicons/css/uicons-rounded-bold.css" rel="stylesheet">
+    <link href="/your-path-to-uicons/css/uicons-rounded-solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Instagram</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             background-color: #f0f0f0;
-           
+
         }
+
         .container {
             height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
         }
+
         .box {
             height: 450px;
-            width: 300px;
-            border-radius: 50px;
+            width: 280px;
+            border-radius: 10px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
         }
+
+        .storiyan {
+            height: 90px;
+            border-bottom: 1px solid #717070;
+            white-space: nowrap;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .storiyan::-webkit-scrollbar {
+            display: none;
+        }
+
+        .story {
+            height: 80px;
+            width: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 3px solid #ff0000;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .story img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+        }
+        #full-screen{
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            z-index: 99;
+            display: none;
+        }
+        .post{
+            height: 280px;
+        }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 10px;
         }
+
         #icon {
             position: absolute;
             font-size: 55px;
-            color:white;
+            color: white;
             opacity: 0.9;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
             z-index: 1;
             transition: all ease 0.5s;
-
         }
+
         i {
             font-size: 35px;
             opacity: 0.9;
-            z-index: 1;
+            z-index: 0;
             cursor: pointer;
         }
-        span{
+
+        span {
             float: right;
         }
+
         span img {
             width: 30px;
             height: 30px;
@@ -61,11 +118,21 @@
 <body>
     <div class="container">
         <div class="box">
-            <img src="https://media.wired.com/photos/598e35994ab8482c0d6946e0/master/w_1920,c_limit/phonepicutres-TA.jpg" alt="like">
-            <i id="icon" class="ri-heart-3-fill"></i>
-            <i id="love" class="ri-heart-line"></i>  <i class="ri-chat-1-line"></i> <i class="ri-send-plane-line"></i><span><img src="save-instagram.png" alt=""></span>
+            <div id="full-screen"></div>
+            <div class="storiyan">
+             
+            </div>
+            <div class="post">
+                <img src="https://media.wired.com/photos/598e35994ab8482c0d6946e0/master/w_1920,c_limit/phonepicutres-TA.jpg"
+                    alt="like">
+                <i id="icon" class="ri-heart-3-fill"></i>
+                <i id="love" class="ri-heart-line"></i> <i class="ri-chat-1-line"></i> <i
+                    class="ri-send-plane-line"></i>
+                    <span><img src="save-instagram.png"   alt=""></span>
+            </div>
         </div>
     </div>
- <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
