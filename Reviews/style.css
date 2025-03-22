@@ -1,0 +1,121 @@
+:root body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+  max-width: 620px;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #333;
+}
+.underline{
+    width: 10rem;
+    height: 0.25rem;
+    background:hsl(205, 78%, 60%);
+    margin: 0 auto;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-top: 50px;
+    background:white;
+}
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  #person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  .img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background:hsl(205, 78%, 60%);
+    color:white;
+  }
+  .img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: hsl(205, 78%, 60%);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+  }
+  #author {
+    margin-bottom: 0.25rem;
+  }
+  #job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color:hsl(205, 78%, 60%);
+    font-size: 0.85rem;
+  }
+  #info {
+    margin-bottom: 0.75rem;
+    text-align: center;
+    padding:  0px 20px;
+  }
+  .prev-btn,
+  .next-btn {
+    color: hsl(205, 90%, 76%);
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition:all 0.3s linear;
+    cursor: pointer;
+  }
+  .prev-btn:hover,
+  .next-btn:hover {
+    color:hsl(205, 78%, 60%);
+  }
+  .random-btn {
+    margin-top: 0.5rem;
+    background: hsl(205, 100%, 96%);
+    color: hsl(205, 78%, 60%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    transition: all 0.3s linear;
+    border-color:hsl(205, 78%, 60%);
+    cursor: pointer;
+  }
+  .random-btn:hover {
+    background:hsl(205, 78%, 60%);
+    color:hsl(205, 86%, 17%);
+  }
